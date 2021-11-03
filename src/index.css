@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.movie {
+border: 1px solid #333;
+text-align:center;
+display: block;
+margin: 1rem;
+padding: 0.5rem;
+} 
+.popular{
+  background-color: green;
+  color: white;
+  width: 10%;
+  display: inline;
+  padding: 3px;
+}
