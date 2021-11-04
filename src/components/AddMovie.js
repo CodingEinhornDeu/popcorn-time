@@ -28,11 +28,21 @@ class AddMovie extends Component {
 
   }
 
+  handleFormSubmit = (event)=>{
+    event.preventDefault();
+    const movieInfo = {
+      title:this.state.title,
+      year:this.state.year,
+      rating:this.state.rating
+    }
+    this.props.addMovieHandler(movieInfo);
+  }
+  
   render() {
     return (
       <div className="AddMovie">
         <h2>Add Movie</h2>
-        <form>
+        <form onSubmit={this.handleFormSubmit}>
           <label>
             Title
             <input
